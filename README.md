@@ -30,7 +30,7 @@ Managed via Maven, the project utilizes the following core libraries:
 ### Build Instructions
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/logging-webapp.git](https://github.com/your-username/logging-webapp.git)
+   git clone https://github.com/omrimo/logging-webapp.git
    cd logging-webapp
    
 2. **Generate WAR file:**

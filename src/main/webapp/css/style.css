@@ -1,0 +1,68 @@
+.hidden {
+    display: none !important;
+}
+
+/* Style for the 'Open' button so it's not hidden under the popup */
+#openBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.window-frame {
+    border: 1px solid #333;
+    width: 80%;
+    max-width: 800px;
+    height: 400px; /* Set your desired window height here */
+    display: flex; /* Turn the frame into a Flexbox container */
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+}
+
+.header-bar {
+    flex-shrink: 0; /* Prevents header from squishing */
+    border-bottom: 1px solid #333;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-container {
+    flex-grow: 1; /* Automatically fills all available middle space */
+    overflow-y: auto;
+    margin: 10px;
+    border: 1px solid #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Ensure header stays visible while scrolling the flexible area */
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    z-index: 10;
+    height: 30px;
+    border: 1px solid #333;
+}
+
+td {
+    border: 1px solid #333;
+    height: 30px;
+    text-align: center;
+}
+
+.controls {
+    flex-shrink: 0; /* Prevents button area from squishing */
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+}
